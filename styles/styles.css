@@ -18,7 +18,7 @@
     --background-color-1:#EDEDED;
     --background-color-2:#333333;
 
-    --content-radius: 3px;
+    --content-radius: .1em;
     --regular-text: 1em;
     --fonts:"ProximaNova", sans-serif;   
 
@@ -51,8 +51,8 @@ button {
     border-style: none;
 }
 
-ul {
-    list-style: none;
+header ul {
+    padding-inline-start: 0;
 }
 
 .header {
@@ -72,18 +72,22 @@ ul {
     flex-direction: column-reverse;
 }
 
+.nav-list-right{
+position: relative;
+align-self: flex-end;
+
+}
+
 .nav-list-right, .nav-list-left {
-    display: flex;
     gap: 1em;
     margin-block-start: 0;
     margin-block-end: 0;
+    flex-direction: row;
+    display: flex;
+
 }
 
-.nav-list-right a {
-    flex-direction: column;
-}
-
-.hamburger, .nav-list-right a, .nav-list-left {
+.hamburger, .nav-list-right, .nav-list-left {
     height: auto;
     width: auto;
     background: none;
@@ -115,5 +119,6 @@ of kan je dingen voor en na invoegen aan het element. */
 
 
 /* Heading door @samarafelladina */
+
 
 
