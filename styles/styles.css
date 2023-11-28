@@ -34,6 +34,7 @@
 }
 
 body {
+    max-width: auto;
     background-color: var(--background-color-1);
     color: var(--primairy-color-4);
     margin: 0;
@@ -66,27 +67,29 @@ aside {
     background-color: pink;
 }
 
-main {
+main { 
     grid-area: content;
     /* Your main content styles here */
 }
 
-.nested-grid {
+& .nested-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr; /* Ruimte tussen de blokken in de nested grid */
+    max-width: auto;
   }
   
   .foto1 {
     background-color: #3498db;
     color: #fff;
-    padding: 20px;
+    padding: 15em;
     text-align: center;
   }
   .foto2 {
-    background-color: #3498db;
+    background-color: #39db34;
     color: #fff;
-    padding: 20px;
+    margin:1em;
+    padding: 15em;
     text-align: center;
   }
 
