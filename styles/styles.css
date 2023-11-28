@@ -46,7 +46,7 @@ body {
         "aside content"
         "footer footer"; 
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: .7fr 2fr;
     min-height: 100vh;  
 }
 
@@ -54,14 +54,76 @@ header {
     grid-area: header;
     /* Your header styles here */
 } 
-
+/* @naddybs aside section */
 aside {
     grid-area: aside;
     /* Your aside styles here */
     height: auto;
-    background-color: pink;
+    background-color: var(--primairy-color-3);
+  
 }
 
+h2 {
+    font-weight: 600;
+    position: relative;
+    left: 4em;
+}
+
+/* .btn-list {
+    background-color: var(--secundairy-color-1);
+    width: 42px;
+    height: 40px;
+    box-shadow: -3px 6px 4px #222;
+} */
+form {
+    position: relative;
+    left: 2em;
+}
+form input{
+    width: 230px;
+    height: 36px;
+    border: none;
+    padding: 0 5px;
+    box-shadow: -3px 6px 4px #222;
+}
+
+form button{
+    width: 42px;
+    height: 40px;
+    background-color: var(--secundairy-color-1);
+    box-shadow: -3px 6px 4px #222; 
+    cursor: pointer;
+}
+.container {
+    margin-top: 20px;
+}
+.container ul{
+    list-style: none;
+    width: 500px;
+}
+.container ul li{
+    width: 100%;
+    background-color: var(--background-color-1);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    position: relative;
+    right: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    box-shadow: -3px 6px 4px #222;
+    transition: 0.5s linear;
+}
+.container ul li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    background-color: #c62d2d;
+}
+/* @naddybs aside section */
 main {
     grid-area: content;
     /* Your main content styles here */
