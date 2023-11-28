@@ -157,6 +157,8 @@ footer {
     background-color: var(--grayscale-color-1);
     bottom: 1;
     grid-area: footer;
+    justify-content: center;
+
 
 }
 
@@ -165,7 +167,34 @@ footer li, footer ul {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
+    line-height: 2em;
 }
+
+.shortcut-footer {
+    min-width: 100px;
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+
+.shortcut-footer div{
+    float: left;
+    width: auto;
+    height: auto;
+    left:0;
+    right:0;
+    margin: 1em;
+;
+
+}
+
+.shortcut-footer h3 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 1em;
+}
+
+
 
 footer a:link, footer a:visited {
     color: var(--primairy-color-3);
@@ -175,19 +204,4 @@ footer a:link, footer a:visited {
 footer a:hover {
     color: var(--primairy-color-4);
     animation-duration: 1s;
-}
-
-.shortcut-footer div{
-    float: left;
-    width: auto;
-    height: auto;
-    padding:0 3em 0 0;
-    left:0;
-    right:0;
-
-}
-
-.shortcut-footer h3 {
-    margin-block-start: 1em;
-    margin-block-end: .5em;
 }
