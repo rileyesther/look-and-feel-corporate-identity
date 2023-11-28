@@ -45,9 +45,13 @@ body {
         "header header"
         "aside content"
         "footer footer";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 5fr auto;
+    grid-template-columns: 0.7fr 2fr;
     min-height: 100vh;  
+}
+.grid-container {
+    display: grid;
+    height: 100%;
 }
 
 header {
@@ -66,6 +70,26 @@ main {
     grid-area: content;
     /* Your main content styles here */
 }
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; /* Ruimte tussen de blokken in de nested grid */
+  }
+  
+  .foto1 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .foto2 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
 
 /* Heading door @samarafelladina */
 header, main {
