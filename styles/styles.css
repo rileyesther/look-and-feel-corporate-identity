@@ -20,7 +20,7 @@
     --grayscale-color-3:#666666;
     --grayscale-color-4:#333333;
 
-    --background-color-1:#EDEDED;
+    --background-color-1:#FFFFFF;
     --background-color-2:#333333;
 
     --content-radius: .1em;
@@ -52,6 +52,7 @@ body {
 
 header {
     grid-area: header;
+    font-size: .8em;
     /* Your header styles here */
 }
 
@@ -68,9 +69,8 @@ main {
 }
 
 /* Heading door @samarafelladina */
-header, main {
+header, main, footer {
     padding: .8em;
-    font-size: .8em;
     display: flex;
 }
 
@@ -154,12 +154,30 @@ of kan je dingen voor en na invoegen aan het element. */
 
 /* Footer */
 footer {
-    background-color: var(--grayscale-color-2);
+    background-color: var(--grayscale-color-1);
     bottom: 1;
     grid-area: footer;
+
 }
 
-footer li {
+footer li, footer ul {
     list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
 
+footer a:link, footer a:visited, footer a:active {
+    color: var(--primairy-color-3);
+    text-decoration: none;
+
+}
+
+.shortcut-footer {
+    display:grid;
+}
+
+.shortcut-footer h3 {
+    margin-block-start: 1em;
+    margin-block-end: .5em;
 }
