@@ -167,10 +167,14 @@ footer li, footer ul {
     padding-inline-start: 0;
 }
 
-footer a:link, footer a:visited, footer a:active {
+footer a:link, footer a:visited {
     color: var(--primairy-color-3);
     text-decoration: none;
+}
 
+footer a:hover {
+    color: var(--primairy-color-4);
+    animation-duration: 1s;
 }
 
 .shortcut-footer div{
