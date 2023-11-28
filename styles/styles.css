@@ -40,7 +40,6 @@ body {
     padding: 0;
     font-size: var(--regular-text);
 
-<<<<<<< Updated upstream
     display: grid;
     grid-template-areas:
         "header header"
