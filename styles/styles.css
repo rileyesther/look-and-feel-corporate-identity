@@ -20,7 +20,7 @@
     --grayscale-color-3:#666666;
     --grayscale-color-4:#333333;
 
-    --background-color-1:#EDEDED;
+    --background-color-1:#FFFFFF;
     --background-color-2:#333333;
 
     --content-radius: .1em;
@@ -57,6 +57,7 @@ body {
 
 header {
     grid-area: header;
+    font-size: .8em;
     /* Your header styles here */
 }
 
@@ -95,9 +96,8 @@ main {
 
 
 /* Heading door @samarafelladina */
-header, main {
+header, main, footer {
     padding: .8em;
-    font-size: .8em;
     display: flex;
 }
 
@@ -181,12 +181,54 @@ of kan je dingen voor en na invoegen aan het element. */
 
 /* Footer */
 footer {
-    background-color: var(--grayscale-color-2);
+    background-color: var(--grayscale-color-1);
     bottom: 1;
     grid-area: footer;
+    justify-content: center;
+
+
 }
 
-footer li {
+footer li, footer ul {
     list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    line-height: 2em;
+}
 
+.shortcut-footer {
+    min-width: 100px;
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+
+.shortcut-footer div{
+    float: left;
+    width: auto;
+    height: auto;
+    left:0;
+    right:0;
+    margin: 1em;
+;
+
+}
+
+.shortcut-footer h3 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 1em;
+}
+
+
+
+footer a:link, footer a:visited {
+    color: var(--primairy-color-3);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primairy-color-4);
+    animation-duration: 1s;
 }
