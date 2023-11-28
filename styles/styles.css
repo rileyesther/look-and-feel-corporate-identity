@@ -125,9 +125,10 @@ of kan je dingen voor en na invoegen aan het element. */
 
 
 
-
+/* Sammy :P */
 
 /* Footer */
 footer {
     background-color: var(--grayscale-color-2);
+    bottom: 1;
 }
