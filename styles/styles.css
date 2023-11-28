@@ -15,6 +15,11 @@
     --secundairy-color-3:#F8C463;
     --secundairy-color-4:#66BA96;
 
+    --grayscale-color-1:#EDEDED;
+    --grayscale-color-2:#CCCCCC;
+    --grayscale-color-3:#666666;
+    --grayscale-color-4:#333333;
+
     --background-color-1:#EDEDED;
     --background-color-2:#333333;
 
@@ -117,3 +122,12 @@ of kan je dingen voor en na invoegen aan het element. */
 /* Heading door @samarafelladina */
 
 
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--grayscale-color-2);
+}
