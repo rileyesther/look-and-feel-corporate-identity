@@ -50,8 +50,7 @@ body {
     min-height: 100vh;  
 }
 
-
- header {
+header {
     grid-area: header;
     /* Your header styles here */
 } 
@@ -162,4 +161,10 @@ of kan je dingen voor en na invoegen aan het element. */
 footer {
     background-color: var(--grayscale-color-2);
     bottom: 1;
+    grid-area: footer;
+}
+
+footer li {
+    list-style: none;
+
 }
