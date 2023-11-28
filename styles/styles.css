@@ -50,7 +50,6 @@ body {
     min-height: 100vh;  
 }
 
-
 header {
     grid-area: header;
     /* Your header styles here */
@@ -67,7 +66,6 @@ main {
     grid-area: content;
     /* Your main content styles here */
 }
-
 
 /* Heading door @samarafelladina */
 header, main {
