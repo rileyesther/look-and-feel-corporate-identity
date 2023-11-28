@@ -39,8 +39,65 @@ body {
     margin: 0;
     padding: 0;
     font-size: var(--regular-text);
-    
+
+<<<<<<< Updated upstream
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside content"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100vh;  
 }
+
+
+header {
+    grid-area: header;
+    /* Your header styles here */
+}
+
+aside {
+    grid-area: aside;
+    /* Your aside styles here */
+    height: auto;
+    background-color: pink;
+}
+
+main {
+    grid-area: content;
+    /* Your main content styles here */
+}
+
+footer {
+    grid-area: footer;
+    /* Your footer styles here */
+}
+=======
+    display: grid; 
+    grid-gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    }
+
+    aside{
+        grid-area: aside; 
+        background-color: black;
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+>>>>>>> Stashed changes
 
 /* Heading door @samarafelladina */
 header, main {
