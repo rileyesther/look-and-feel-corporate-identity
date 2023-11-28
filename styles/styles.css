@@ -173,8 +173,14 @@ footer a:link, footer a:visited, footer a:active {
 
 }
 
-.shortcut-footer {
-    display:grid;
+.shortcut-footer div{
+    float: left;
+    width: auto;
+    height: auto;
+    padding:0 3em 0 0;
+    left:0;
+    right:0;
+
 }
 
 .shortcut-footer h3 {
