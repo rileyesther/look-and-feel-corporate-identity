@@ -30,7 +30,7 @@
 
 body {
     background-color: var(--background-color-1);
-    color: var(--primairy-color-2);
+    color: var(--primairy-color-4);
     margin: 0;
     padding: 0;
 
@@ -39,8 +39,7 @@ body {
 }
 
 /* Heading door @samarafelladina */
-/* organismen */
-header {
+header, main {
     padding: .8em;
     font-size: .8em;
     display: flex;
@@ -51,9 +50,6 @@ button {
     border-style: none;
 }
 
-header ul {
-    padding-inline-start: 0;
-}
 
 .header {
     display: flex;
@@ -73,18 +69,16 @@ header ul {
 }
 
 .nav-list-right{
-position: relative;
-align-self: flex-end;
-
+    position: absolute;
+    right: 0;
+    
 }
 
 .nav-list-right, .nav-list-left {
     gap: 1em;
     margin-block-start: 0;
     margin-block-end: 0;
-    flex-direction: row;
-    display: flex;
-
+    padding-inline-start: 2em;
 }
 
 .hamburger, .nav-list-right, .nav-list-left {
@@ -104,7 +98,6 @@ align-self: flex-end;
     height: 2em;
     width: auto;
     align-self: center;
-    border-spacing: 1em;
 }
 
 .header a:link, .header a:visited, .header a:active{
@@ -112,13 +105,11 @@ align-self: flex-end;
     text-decoration: none;
 }
 
-
 /* Wat is een Pseudo (::) element? Dit is een element wat een
 deel van een element gebruikt, bijvoorbeeld de eerste letter, 
 of kan je dingen voor en na invoegen aan het element. */
 
 
 /* Heading door @samarafelladina */
-
 
 
