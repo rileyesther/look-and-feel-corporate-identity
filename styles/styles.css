@@ -15,15 +15,105 @@
     --secundairy-color-3:#F8C463;
     --secundairy-color-4:#66BA96;
 
-    --grayscale-color-1:#EDEDED;
-    --grayscale-color-2:#CCCCCC;
-    --grayscale-color-3:#666666;
-    --grayscale-color-4:#333333;
-
     --background-color-1:#EDEDED;
     --background-color-2:#333333;
 
     --content-radius: 3px;
-    --regular-text: 16px;
+    --regular-text: 1em;
     --fonts:"ProximaNova", sans-serif;   
+
 }
+
+* {
+    font-family: var(--fonts);
+}
+
+body {
+    background-color: var(--background-color-1);
+    color: var(--primairy-color-2);
+    margin: 0;
+    padding: 0;
+
+    font-size: var(--regular-text);
+    
+}
+
+/* Heading door @samarafelladina */
+/* organismen */
+header {
+    padding: .8em;
+    font-size: .8em;
+    display: flex;
+}
+
+button {
+    appearance: auto;
+    border-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    background-color: var(--secundairy-color-1);
+    align-items: center;
+    gap: .8em;
+}
+
+.logo-funda {
+    width: auto;
+    height: 2em;
+    cursor: pointer;
+}
+
+.hamburger{
+    flex-direction: column-reverse;
+}
+
+.nav-list-right, .nav-list-left {
+    display: flex;
+    gap: 1em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.nav-list-right a {
+    flex-direction: column;
+}
+
+.hamburger, .nav-list-right a, .nav-list-left {
+    height: auto;
+    width: auto;
+    background: none;
+    color: var(--primairy-color-2);  
+
+    text-align: center;
+    cursor: pointer;
+    font-size: .8em;
+    display: flex;
+    justify-content: center;  
+}
+
+.hamburger img, .nav-list-right img {
+    height: 2em;
+    width: auto;
+    align-self: center;
+    border-spacing: 1em;
+}
+
+.header a:link, .header a:visited, .header a:active{
+    color: var(--primairy-color-2);
+    text-decoration: none;
+}
+
+
+/* Wat is een Pseudo (::) element? Dit is een element wat een
+deel van een element gebruikt, bijvoorbeeld de eerste letter, 
+of kan je dingen voor en na invoegen aan het element. */
+
+
+/* Heading door @samarafelladina */
+
+
