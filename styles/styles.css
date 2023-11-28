@@ -44,17 +44,17 @@ body {
     grid-template-areas:
         "header header"
         "aside content"
-        "footer footer";
+        "footer footer"; 
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 2fr;
     min-height: 100vh;  
 }
 
 
-header {
+ header {
     grid-area: header;
     /* Your header styles here */
-}
+} 
 
 aside {
     grid-area: aside;
@@ -68,10 +68,10 @@ main {
     /* Your main content styles here */
 }
 
-footer {
+ footer {
     grid-area: footer;
     /* Your footer styles here */
-}
+} 
 
 /* Heading door @samarafelladina */
 header, main {
