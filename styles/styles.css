@@ -46,8 +46,8 @@ body {
         "header header"
         "aside content"
         "footer footer"; 
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: .7fr 2fr;
+    grid-template-rows: 0.1fr 13fr 5fr;
+    grid-template-columns: 0.7fr 2fr;
     min-height: 100vh;  
 }
 .grid-container {
@@ -56,8 +56,8 @@ body {
 }
 
 header {
-    grid-area: header;
     font-size: .8em;
+    grid-area:header;
     /* Your header styles here */
 } 
 /* @naddybs aside section */
@@ -68,6 +68,40 @@ aside {
     background-color: var(--primairy-color-3);
   
 }
+
+h1 {
+    position: relative;
+    top:0;
+    border: under;
+}
+
+.house1 {
+    position: absolute;
+    top: 12em;
+    left: 25em;
+    background-color: var(--grayscale-color-2);
+    }
+
+.house2 {
+    position: absolute;
+    top: 12em;
+    left: 35em;
+    background-color: var(--grayscale-color-2);
+}
+
+.house3 {
+    position: absolute;
+    top: 31em;
+    left: 35em;
+    background-color: var(--grayscale-color-2); 
+}
+.house4 {
+    position: absolute;
+    top: 31em;
+    left: 25em;
+    background-color: var(--grayscale-color-2); 
+}
+    /* Your main content styles here */
 
 h2 {
     font-weight: 600;
@@ -132,7 +166,6 @@ form button{
 /* @naddybs aside section */
 main {
     grid-area: content;
-    /* Your main content styles here */
 }
 
  footer {
